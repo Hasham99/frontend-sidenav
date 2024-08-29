@@ -9,6 +9,8 @@ import About from "./components/Pages/About";
 const App = () => {
   return (
     <Routes>
+      <Route path="login" element={<Login />} />
+      <Route path="signup" element={<Signup />} />
       <Route path="/" element={<Layout />}>
         <Route path="" element={<Home />} />
         <Route path="about" element={<About />} />
